@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83405A98137F23930060CAD4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83405A97137F23930060CAD4 /* Cocoa.framework */; };
+		83405AA2137F23930060CAD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83405AA0137F23930060CAD4 /* InfoPlist.strings */; };
+		83405AA5137F23930060CAD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AA4137F23930060CAD4 /* main.m */; };
+		83405AA8137F23930060CAD4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83405AA6137F23930060CAD4 /* Credits.rtf */; };
+		83405AAB137F23930060CAD4 /* MtGOSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */; };
+		83405AAE137F23930060CAD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83405AAC137F23930060CAD4 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83405A93137F23930060CAD4 /* MtGOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtGOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83405A97137F23930060CAD4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		83405A9A137F23930060CAD4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		83405A9B137F23930060CAD4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83405A9C137F23930060CAD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83405A9F137F23930060CAD4 /* MtGOSX-Info.plist */ = {isa = PBXFileReference; path = "MtGOSX-Info.plist"; sourceTree = "<group>"; };
+		83405AA1137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83405AA3137F23930060CAD4 /* MtGOSX-Prefix.pch */ = {isa = PBXFileReference; path = "MtGOSX-Prefix.pch"; sourceTree = "<group>"; };
+		83405AA4137F23930060CAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83405AA7137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */ = {isa = PBXFileReference; path = MtGOSXAppDelegate.h; sourceTree = "<group>"; };
+		83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MtGOSXAppDelegate.m; sourceTree = "<group>"; };
+		83405AAD137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83405A90137F23930060CAD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83405A98137F23930060CAD4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83405A88137F23930060CAD4 = {
+			isa = PBXGroup;
+			children = (
+				83405A9D137F23930060CAD4 /* MtGOSX */,
+				83405A96137F23930060CAD4 /* Frameworks */,
+				83405A94137F23930060CAD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83405A94137F23930060CAD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83405A93137F23930060CAD4 /* MtGOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83405A96137F23930060CAD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83405A97137F23930060CAD4 /* Cocoa.framework */,
+				83405A99137F23930060CAD4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83405A99137F23930060CAD4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83405A9A137F23930060CAD4 /* AppKit.framework */,
+				83405A9B137F23930060CAD4 /* CoreData.framework */,
+				83405A9C137F23930060CAD4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		83405A9D137F23930060CAD4 /* MtGOSX */ = {
+			isa = PBXGroup;
+			children = (
+				83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */,
+				83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */,
+				83405AAC137F23930060CAD4 /* MainMenu.xib */,
+				83405A9E137F23930060CAD4 /* Supporting Files */,
+			);
+			path = MtGOSX;
+			sourceTree = "<group>";
+		};
+		83405A9E137F23930060CAD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83405A9F137F23930060CAD4 /* MtGOSX-Info.plist */,
+				83405AA0137F23930060CAD4 /* InfoPlist.strings */,
+				83405AA3137F23930060CAD4 /* MtGOSX-Prefix.pch */,
+				83405AA4137F23930060CAD4 /* main.m */,
+				83405AA6137F23930060CAD4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83405A92137F23930060CAD4 /* MtGOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83405AB1137F23930060CAD4 /* Build configuration list for PBXNativeTarget "MtGOSX" */;
+			buildPhases = (
+				83405A8F137F23930060CAD4 /* Sources */,
+				83405A90137F23930060CAD4 /* Frameworks */,
+				83405A91137F23930060CAD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MtGOSX;
+			productName = MtGOSX;
+			productReference = 83405A93137F23930060CAD4 /* MtGOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83405A8A137F23930060CAD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Insomnia Addict";
+			};
+			buildConfigurationList = 83405A8D137F23930060CAD4 /* Build configuration list for PBXProject "MtGOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83405A88137F23930060CAD4;
+			productRefGroup = 83405A94137F23930060CAD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83405A92137F23930060CAD4 /* MtGOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83405A91137F23930060CAD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83405AA2137F23930060CAD4 /* InfoPlist.strings in Resources */,
+				83405AA8137F23930060CAD4 /* Credits.rtf in Resources */,
+				83405AAE137F23930060CAD4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83405A8F137F23930060CAD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83405AA5137F23930060CAD4 /* main.m in Sources */,
+				83405AAB137F23930060CAD4 /* MtGOSXAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83405AA0137F23930060CAD4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83405AA1137F23930060CAD4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83405AA6137F23930060CAD4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83405AA7137F23930060CAD4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		83405AAC137F23930060CAD4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83405AAD137F23930060CAD4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83405AAF137F23930060CAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83405AB0137F23930060CAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83405AB2137F23930060CAD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MtGOSX/MtGOSX-Prefix.pch";
+				INFOPLIST_FILE = "MtGOSX/MtGOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83405AB3137F23930060CAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MtGOSX/MtGOSX-Prefix.pch";
+				INFOPLIST_FILE = "MtGOSX/MtGOSX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83405A8D137F23930060CAD4 /* Build configuration list for PBXProject "MtGOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83405AAF137F23930060CAD4 /* Debug */,
+				83405AB0137F23930060CAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83405AB1137F23930060CAD4 /* Build configuration list for PBXNativeTarget "MtGOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83405AB2137F23930060CAD4 /* Debug */,
+				83405AB3137F23930060CAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83405A8A137F23930060CAD4 /* Project object */;
+}
