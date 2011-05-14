@@ -9,6 +9,7 @@
 #import "MtGOSXAppDelegate.h"
 
 #import "JSON.h"
+#import "MenubarTickerView.h"
 
 @implementation MtGOSXAppDelegate
 
@@ -16,7 +17,22 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    menubarItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:50] retain];
+    NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
+    menubarItem = [[statusBar statusItemWithLength:50] retain];
+    [menubarItem setHighlightMode:YES];
+    [menubarItem setTitle:@"7.99"];
+    [menubarItem setEnabled:YES];
+    [menubarItem setToolTip:@"MtGox Ticker"];
+    
+    [menubarItem setTarget:self];
+    [menubarItem setAction:@selector(menubarItemClicked:)];
+    
+    //NSView *item = [[MenubarTickerView alloc] init];
+    //[menubarItem setView:item];
+    //[item release];
+}
+
+- (void)menubarItemClicked:(id)sender {
     
 }
 
