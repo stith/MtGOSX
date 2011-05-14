@@ -11,6 +11,7 @@
 @interface MtGOSXAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    NSStatusItem *menubarItem;
 }
 
 @property (assign) IBOutlet NSWindow *window;

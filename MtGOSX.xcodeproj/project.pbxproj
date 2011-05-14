@@ -13,6 +13,22 @@
 		83405AA8137F23930060CAD4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83405AA6137F23930060CAD4 /* Credits.rtf */; };
 		83405AAB137F23930060CAD4 /* MtGOSXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */; };
 		83405AAE137F23930060CAD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83405AAC137F23930060CAD4 /* MainMenu.xib */; };
+		83405AD0137F25620060CAD4 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ABF137F25620060CAD4 /* NSObject+JSON.m */; };
+		83405AD1137F25620060CAD4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AC1137F25620060CAD4 /* SBJsonParser.m */; };
+		83405AD2137F25620060CAD4 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AC3137F25620060CAD4 /* SBJsonStreamParser.m */; };
+		83405AD3137F25620060CAD4 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AC5137F25620060CAD4 /* SBJsonStreamParserAdapter.m */; };
+		83405AD4137F25620060CAD4 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AC7137F25620060CAD4 /* SBJsonStreamParserState.m */; };
+		83405AD5137F25620060CAD4 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AC9137F25620060CAD4 /* SBJsonStreamWriter.m */; };
+		83405AD6137F25620060CAD4 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ACB137F25620060CAD4 /* SBJsonStreamWriterState.m */; };
+		83405AD7137F25620060CAD4 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ACD137F25620060CAD4 /* SBJsonTokeniser.m */; };
+		83405AD8137F25620060CAD4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ACF137F25620060CAD4 /* SBJsonWriter.m */; };
+		83405AE1137F25950060CAD4 /* Ticker.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ADB137F25950060CAD4 /* Ticker.m */; };
+		83405AE2137F25950060CAD4 /* BitcoinMarket.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405ADE137F25950060CAD4 /* BitcoinMarket.m */; };
+		83405AE3137F25950060CAD4 /* MtGoxMarket.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AE0137F25950060CAD4 /* MtGoxMarket.m */; };
+		83405AE6137F25B70060CAD4 /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AE5137F25B70060CAD4 /* Trade.m */; };
+		83405AEB137F25DC0060CAD4 /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AEA137F25DC0060CAD4 /* RequestHandler.m */; };
+		83405AF1137F25FC0060CAD4 /* TaggedNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */; };
+		83405AF2137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +37,49 @@
 		83405A9A137F23930060CAD4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		83405A9B137F23930060CAD4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		83405A9C137F23930060CAD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		83405A9F137F23930060CAD4 /* MtGOSX-Info.plist */ = {isa = PBXFileReference; path = "MtGOSX-Info.plist"; sourceTree = "<group>"; };
+		83405A9F137F23930060CAD4 /* MtGOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MtGOSX-Info.plist"; sourceTree = "<group>"; };
 		83405AA1137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		83405AA3137F23930060CAD4 /* MtGOSX-Prefix.pch */ = {isa = PBXFileReference; path = "MtGOSX-Prefix.pch"; sourceTree = "<group>"; };
+		83405AA3137F23930060CAD4 /* MtGOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MtGOSX-Prefix.pch"; sourceTree = "<group>"; };
 		83405AA4137F23930060CAD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83405AA7137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */ = {isa = PBXFileReference; path = MtGOSXAppDelegate.h; sourceTree = "<group>"; };
+		83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MtGOSXAppDelegate.h; sourceTree = "<group>"; };
 		83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MtGOSXAppDelegate.m; sourceTree = "<group>"; };
 		83405AAD137F23930060CAD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		83405ABD137F25620060CAD4 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		83405ABE137F25620060CAD4 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSON.h"; sourceTree = "<group>"; };
+		83405ABF137F25620060CAD4 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSON.m"; sourceTree = "<group>"; };
+		83405AC0137F25620060CAD4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		83405AC1137F25620060CAD4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		83405AC2137F25620060CAD4 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		83405AC3137F25620060CAD4 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		83405AC4137F25620060CAD4 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		83405AC5137F25620060CAD4 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		83405AC6137F25620060CAD4 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		83405AC7137F25620060CAD4 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		83405AC8137F25620060CAD4 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		83405AC9137F25620060CAD4 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		83405ACA137F25620060CAD4 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		83405ACB137F25620060CAD4 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		83405ACC137F25620060CAD4 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		83405ACD137F25620060CAD4 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		83405ACE137F25620060CAD4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		83405ACF137F25620060CAD4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		83405ADA137F25950060CAD4 /* Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticker.h; sourceTree = "<group>"; };
+		83405ADB137F25950060CAD4 /* Ticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticker.m; sourceTree = "<group>"; };
+		83405ADC137F25950060CAD4 /* BitcoinMarketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcoinMarketDelegate.h; sourceTree = "<group>"; };
+		83405ADD137F25950060CAD4 /* BitcoinMarket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitcoinMarket.h; sourceTree = "<group>"; };
+		83405ADE137F25950060CAD4 /* BitcoinMarket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitcoinMarket.m; sourceTree = "<group>"; };
+		83405ADF137F25950060CAD4 /* MtGoxMarket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtGoxMarket.h; sourceTree = "<group>"; };
+		83405AE0137F25950060CAD4 /* MtGoxMarket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtGoxMarket.m; sourceTree = "<group>"; };
+		83405AE4137F25B70060CAD4 /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
+		83405AE5137F25B70060CAD4 /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
+		83405AE8137F25DC0060CAD4 /* RequestHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandlerDelegate.h; sourceTree = "<group>"; };
+		83405AE9137F25DC0060CAD4 /* RequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandler.h; sourceTree = "<group>"; };
+		83405AEA137F25DC0060CAD4 /* RequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHandler.m; sourceTree = "<group>"; };
+		83405AED137F25FC0060CAD4 /* TaggedNSURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaggedNSURLConnection.h; sourceTree = "<group>"; };
+		83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedNSURLConnection.m; sourceTree = "<group>"; };
+		83405AEF137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+IntegerKeys.h"; sourceTree = "<group>"; };
+		83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IntegerKeys.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +133,13 @@
 		83405A9D137F23930060CAD4 /* MtGOSX */ = {
 			isa = PBXGroup;
 			children = (
+				83405AEC137F25F40060CAD4 /* Additions */,
 				83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */,
 				83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */,
 				83405AAC137F23930060CAD4 /* MainMenu.xib */,
+				83405AE7137F25CF0060CAD4 /* Utilities */,
+				83405AD9137F258B0060CAD4 /* Models */,
+				83405ABC137F25620060CAD4 /* JSON */,
 				83405A9E137F23930060CAD4 /* Supporting Files */,
 			);
 			path = MtGOSX;
@@ -100,6 +155,70 @@
 				83405AA6137F23930060CAD4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83405ABC137F25620060CAD4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				83405ABD137F25620060CAD4 /* JSON.h */,
+				83405ABE137F25620060CAD4 /* NSObject+JSON.h */,
+				83405ABF137F25620060CAD4 /* NSObject+JSON.m */,
+				83405AC0137F25620060CAD4 /* SBJsonParser.h */,
+				83405AC1137F25620060CAD4 /* SBJsonParser.m */,
+				83405AC2137F25620060CAD4 /* SBJsonStreamParser.h */,
+				83405AC3137F25620060CAD4 /* SBJsonStreamParser.m */,
+				83405AC4137F25620060CAD4 /* SBJsonStreamParserAdapter.h */,
+				83405AC5137F25620060CAD4 /* SBJsonStreamParserAdapter.m */,
+				83405AC6137F25620060CAD4 /* SBJsonStreamParserState.h */,
+				83405AC7137F25620060CAD4 /* SBJsonStreamParserState.m */,
+				83405AC8137F25620060CAD4 /* SBJsonStreamWriter.h */,
+				83405AC9137F25620060CAD4 /* SBJsonStreamWriter.m */,
+				83405ACA137F25620060CAD4 /* SBJsonStreamWriterState.h */,
+				83405ACB137F25620060CAD4 /* SBJsonStreamWriterState.m */,
+				83405ACC137F25620060CAD4 /* SBJsonTokeniser.h */,
+				83405ACD137F25620060CAD4 /* SBJsonTokeniser.m */,
+				83405ACE137F25620060CAD4 /* SBJsonWriter.h */,
+				83405ACF137F25620060CAD4 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		83405AD9137F258B0060CAD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83405AE4137F25B70060CAD4 /* Trade.h */,
+				83405AE5137F25B70060CAD4 /* Trade.m */,
+				83405ADA137F25950060CAD4 /* Ticker.h */,
+				83405ADB137F25950060CAD4 /* Ticker.m */,
+				83405ADC137F25950060CAD4 /* BitcoinMarketDelegate.h */,
+				83405ADD137F25950060CAD4 /* BitcoinMarket.h */,
+				83405ADE137F25950060CAD4 /* BitcoinMarket.m */,
+				83405ADF137F25950060CAD4 /* MtGoxMarket.h */,
+				83405AE0137F25950060CAD4 /* MtGoxMarket.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		83405AE7137F25CF0060CAD4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				83405AE8137F25DC0060CAD4 /* RequestHandlerDelegate.h */,
+				83405AE9137F25DC0060CAD4 /* RequestHandler.h */,
+				83405AEA137F25DC0060CAD4 /* RequestHandler.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		83405AEC137F25F40060CAD4 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				83405AED137F25FC0060CAD4 /* TaggedNSURLConnection.h */,
+				83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */,
+				83405AEF137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.h */,
+				83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +286,22 @@
 			files = (
 				83405AA5137F23930060CAD4 /* main.m in Sources */,
 				83405AAB137F23930060CAD4 /* MtGOSXAppDelegate.m in Sources */,
+				83405AD0137F25620060CAD4 /* NSObject+JSON.m in Sources */,
+				83405AD1137F25620060CAD4 /* SBJsonParser.m in Sources */,
+				83405AD2137F25620060CAD4 /* SBJsonStreamParser.m in Sources */,
+				83405AD3137F25620060CAD4 /* SBJsonStreamParserAdapter.m in Sources */,
+				83405AD4137F25620060CAD4 /* SBJsonStreamParserState.m in Sources */,
+				83405AD5137F25620060CAD4 /* SBJsonStreamWriter.m in Sources */,
+				83405AD6137F25620060CAD4 /* SBJsonStreamWriterState.m in Sources */,
+				83405AD7137F25620060CAD4 /* SBJsonTokeniser.m in Sources */,
+				83405AD8137F25620060CAD4 /* SBJsonWriter.m in Sources */,
+				83405AE1137F25950060CAD4 /* Ticker.m in Sources */,
+				83405AE2137F25950060CAD4 /* BitcoinMarket.m in Sources */,
+				83405AE3137F25950060CAD4 /* MtGoxMarket.m in Sources */,
+				83405AE6137F25B70060CAD4 /* Trade.m in Sources */,
+				83405AEB137F25DC0060CAD4 /* RequestHandler.m in Sources */,
+				83405AF1137F25FC0060CAD4 /* TaggedNSURLConnection.m in Sources */,
+				83405AF2137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

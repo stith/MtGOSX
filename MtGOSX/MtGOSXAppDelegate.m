@@ -8,13 +8,16 @@
 
 #import "MtGOSXAppDelegate.h"
 
+#import "JSON.h"
+
 @implementation MtGOSXAppDelegate
 
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    menubarItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:50] retain];
+    
 }
 
 @end
