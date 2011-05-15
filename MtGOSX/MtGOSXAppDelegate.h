@@ -8,10 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MtGOSXAppDelegate : NSObject <NSApplicationDelegate> {
+#import "BitcoinMarketDelegate.h"
+
+@class MtGoxMarket;
+
+@interface MtGOSXAppDelegate : NSObject <NSApplicationDelegate,BitcoinMarketDelegate> {
 @private
     NSWindow *window;
     NSStatusItem *menubarItem;
+    
+    MtGoxMarket *market;
+    NSTimer *refreshTimer;
 }
 
 @property (assign) IBOutlet NSWindow *window;

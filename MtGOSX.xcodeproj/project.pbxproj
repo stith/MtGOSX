@@ -30,6 +30,7 @@
 		83405AF1137F25FC0060CAD4 /* TaggedNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */; };
 		83405AF2137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */; };
 		83405AF6137F282D0060CAD4 /* MenubarTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AF5137F282D0060CAD4 /* MenubarTickerView.m */; };
+		83405AF8137F2D290060CAD4 /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = 83405AF7137F2D290060CAD4 /* bitcoin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IntegerKeys.m"; sourceTree = "<group>"; };
 		83405AF4137F282D0060CAD4 /* MenubarTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenubarTickerView.h; sourceTree = "<group>"; };
 		83405AF5137F282D0060CAD4 /* MenubarTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarTickerView.m; sourceTree = "<group>"; };
+		83405AF7137F2D290060CAD4 /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		83405A9E137F23930060CAD4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83405AF7137F2D290060CAD4 /* bitcoin.png */,
 				83405A9F137F23930060CAD4 /* MtGOSX-Info.plist */,
 				83405AA0137F23930060CAD4 /* InfoPlist.strings */,
 				83405AA3137F23930060CAD4 /* MtGOSX-Prefix.pch */,
@@ -287,6 +290,7 @@
 				83405AA2137F23930060CAD4 /* InfoPlist.strings in Resources */,
 				83405AA8137F23930060CAD4 /* Credits.rtf in Resources */,
 				83405AAE137F23930060CAD4 /* MainMenu.xib in Resources */,
+				83405AF8137F2D290060CAD4 /* bitcoin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

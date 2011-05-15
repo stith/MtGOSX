@@ -10,30 +10,74 @@
 
 #import "JSON.h"
 #import "MenubarTickerView.h"
+#import "MtGoxMarket.h"
+#import "Ticker.h"
 
 @implementation MtGOSXAppDelegate
 
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
-    menubarItem = [[statusBar statusItemWithLength:50] retain];
+    menubarItem = [[statusBar statusItemWithLength:70] retain];
     [menubarItem setHighlightMode:YES];
-    [menubarItem setTitle:@"7.99"];
+    [menubarItem setTitle:@"....."];
     [menubarItem setEnabled:YES];
     [menubarItem setToolTip:@"MtGox Ticker"];
+    [menubarItem setImage:[NSImage imageNamed:@"bitcoin.png"]];
     
-    [menubarItem setTarget:self];
+    /*[menubarItem setTarget:self];
     [menubarItem setAction:@selector(menubarItemClicked:)];
+    [menubarItem sendActionOn:NSRightMouseUp];*/
+    
     
     //NSView *item = [[MenubarTickerView alloc] init];
     //[menubarItem setView:item];
     //[item release];
+    
+    
+    NSMenu *clickMenu = [[NSMenu alloc] initWithTitle:@"Ticker"];
+    
+    NSMenuItem *refreshItem = [[NSMenuItem alloc] initWithTitle:@"Refresh" action:@selector(refreshTicker:) keyEquivalent:@"r"];
+    [refreshItem setEnabled:YES];
+    [clickMenu addItem:refreshItem];
+    
+    [menubarItem setMenu:clickMenu];
+    
+    
+    market = [[MtGoxMarket alloc] initWithDelegate:self];
+    [market fetchTicker];
+    
+    refreshTimer = [[NSTimer scheduledTimerWithTimeInterval:1000*60 target:market selector:@selector(fetchTicker) userInfo:nil repeats:YES] retain];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    [refreshTimer invalidate];
+    [refreshTimer release];
+    
+    [menubarItem release];
+    [market release];
 }
 
 - (void)menubarItemClicked:(id)sender {
+    [market fetchTicker];
+}
+
+#pragma mark Bitcoin market delegate
+
+-(void)bitcoinMarket:(BitcoinMarket*)market didReceiveTicker:(Ticker*)ticker {
+    [menubarItem setTitle:[NSString stringWithFormat:@"%.2f",ticker.last.floatValue]];
+}
+
+// A request failed for some reason, for example the API being down
+-(void)bitcoinMarket:(BitcoinMarket*)market requestFailedWithError:(NSError*)error {
     
 }
+
+// Request wasn't formatted as expected
+-(void)bitcoinMarket:(BitcoinMarket*)market didReceiveInvalidResponse:(NSData*)data {
+    
+}
+
 
 @end
