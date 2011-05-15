@@ -29,7 +29,6 @@
 		83405AEB137F25DC0060CAD4 /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AEA137F25DC0060CAD4 /* RequestHandler.m */; };
 		83405AF1137F25FC0060CAD4 /* TaggedNSURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */; };
 		83405AF2137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */; };
-		83405AF6137F282D0060CAD4 /* MenubarTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83405AF5137F282D0060CAD4 /* MenubarTickerView.m */; };
 		83405AF8137F2D290060CAD4 /* bitcoin.png in Resources */ = {isa = PBXBuildFile; fileRef = 83405AF7137F2D290060CAD4 /* bitcoin.png */; };
 /* End PBXBuildFile section */
 
@@ -82,8 +81,6 @@
 		83405AEE137F25FC0060CAD4 /* TaggedNSURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaggedNSURLConnection.m; sourceTree = "<group>"; };
 		83405AEF137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+IntegerKeys.h"; sourceTree = "<group>"; };
 		83405AF0137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+IntegerKeys.m"; sourceTree = "<group>"; };
-		83405AF4137F282D0060CAD4 /* MenubarTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenubarTickerView.h; sourceTree = "<group>"; };
-		83405AF5137F282D0060CAD4 /* MenubarTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarTickerView.m; sourceTree = "<group>"; };
 		83405AF7137F2D290060CAD4 /* bitcoin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +138,6 @@
 				83405AA9137F23930060CAD4 /* MtGOSXAppDelegate.h */,
 				83405AAA137F23930060CAD4 /* MtGOSXAppDelegate.m */,
 				83405AAC137F23930060CAD4 /* MainMenu.xib */,
-				83405AF3137F280B0060CAD4 /* Views */,
 				83405AEC137F25F40060CAD4 /* Additions */,
 				83405AE7137F25CF0060CAD4 /* Utilities */,
 				83405AD9137F258B0060CAD4 /* Models */,
@@ -228,15 +224,6 @@
 			name = Additions;
 			sourceTree = "<group>";
 		};
-		83405AF3137F280B0060CAD4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				83405AF4137F282D0060CAD4 /* MenubarTickerView.h */,
-				83405AF5137F282D0060CAD4 /* MenubarTickerView.m */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,7 +306,6 @@
 				83405AEB137F25DC0060CAD4 /* RequestHandler.m in Sources */,
 				83405AF1137F25FC0060CAD4 /* TaggedNSURLConnection.m in Sources */,
 				83405AF2137F25FC0060CAD4 /* NSMutableDictionary+IntegerKeys.m in Sources */,
-				83405AF6137F282D0060CAD4 /* MenubarTickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +420,7 @@
 				83405AB3137F23930060CAD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

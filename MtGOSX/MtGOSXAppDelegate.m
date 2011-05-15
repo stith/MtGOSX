@@ -9,7 +9,6 @@
 #import "MtGOSXAppDelegate.h"
 
 #import "JSON.h"
-#import "MenubarTickerView.h"
 #import "MtGoxMarket.h"
 #import "Ticker.h"
 
@@ -25,16 +24,6 @@
     [menubarItem setEnabled:YES];
     [menubarItem setToolTip:@"MtGox Ticker"];
     [menubarItem setImage:[NSImage imageNamed:@"bitcoin.png"]];
-    
-    /*[menubarItem setTarget:self];
-    [menubarItem setAction:@selector(menubarItemClicked:)];
-    [menubarItem sendActionOn:NSRightMouseUp];*/
-    
-    
-    //NSView *item = [[MenubarTickerView alloc] init];
-    //[menubarItem setView:item];
-    //[item release];
-    
     
     NSMenu *clickMenu = [[NSMenu alloc] initWithTitle:@"Ticker"];
     
@@ -62,6 +51,8 @@
 - (void)menubarItemClicked:(id)sender {
     [market fetchTicker];
 }
+
+#pragma mark 
 
 #pragma mark Bitcoin market delegate
 
